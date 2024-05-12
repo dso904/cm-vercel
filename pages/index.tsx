@@ -254,6 +254,8 @@ function HomePage() {
               <hr />
               <br />
               <h2>A UNIQUE SOLUTION TO GLOBAL WARMING USING AI</h2>
+              <br />
+              Sagnik Chakraborty  |  Purbayon Sarkar  |  Hrishikesh Saha
             </div>
           </div>
         </div>
