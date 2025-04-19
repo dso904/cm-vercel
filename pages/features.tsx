@@ -66,7 +66,7 @@ Apart from this, it also has the following features:-<br></br><br></br>
             
             <hr></hr>
             <br />
-            <a href="https://chatbot-apon.onrender.com/" target="_blank" rel="noopener noreferrer">
+            <a href="https://cm-chat.onrender.com/" target="_blank" rel="noopener noreferrer">
             <Image src="/images/ChatUI.jpeg" alt="Forum"width={450} height={450} className={styles.page}/>
             <h1>Chat2Eco-The AI Chatbot</h1>
             </a>
