@@ -24,11 +24,14 @@ export default function Header() {
           </Pass>
           
         </div>
+        {/*
         <div className={styles.action}>
           <span className={styles.actionButton} onClick={showPlayer} btn-action="player">
             Watch Video
             <span>→</span>
           </span>
+          */}
+        
           <span className={styles.actionButton} onClick={showMenu} btn-action="menu">
             Menu
             <span>→</span>
