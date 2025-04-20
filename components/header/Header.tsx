@@ -1,11 +1,11 @@
 import styles from "./Header.module.css";
 import Pass from "@/components/pass/Pass";
-import { showPlayer } from "../player/Player";
+// you can drop this import if you’re not using showPlayer right now
+// import { showPlayer } from "../player/Player";
 
 export default function Header() {
-  function showMenu() {
+  function showMenu() {}
 
-  }
   return (
     <div className={styles.header}>
       <div className={styles.inner}>
@@ -22,21 +22,30 @@ export default function Header() {
           <Pass href="/goals">
             <span>Goals</span>
           </Pass>
-          
         </div>
+
         {/*
         <div className={styles.action}>
-          <span className={styles.actionButton} onClick={showPlayer} btn-action="player">
+          <span
+            className={styles.actionButton}
+            onClick={showPlayer}
+            data-btn-action="player"
+          >
             Watch Video
             <span>→</span>
           </span>
-          */}
-        
-          <span className={styles.actionButton} onClick={showMenu} btn-action="menu">
-            Menu
-            <span>→</span>
-          </span>
         </div>
+        */}
+
+        {/* Menu button */}
+        <span
+          className={styles.actionButton}
+          onClick={showMenu}
+          data-btn-action="menu"
+        >
+          Menu
+          <span>→</span>
+        </span>
       </div>
     </div>
   );
