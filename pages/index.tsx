@@ -10,7 +10,7 @@ import React from "react";
 import Image from "next/image";
 import ReactDOM from "react-dom";
 import { RemoveCurtain } from "@/components/curtain/Curtain";
-import {showPlayer} from "@/components/player/Player";
+// import {showPlayer} from "@/components/player/Player";
 
 function HomePage() {
   // rest of the js
@@ -48,36 +48,36 @@ function HomePage() {
         },
       });
 
-      const videoPreview = document.querySelector("#videoPreview");
-      gsap.set(videoPreview, {
-        scaleX: 0.5,
-        transformOrigin: "center",
-      });
-      gsap.to(videoPreview, {
-        scrollTrigger: {
-          trigger: videoPreview,
-          start: `top bottom`,
-          end: "top 21px",
-          scrub: true,
-        },
-        scaleX: 1,
-      });
-      gsap.to(videoPreview, {
-        scrollTrigger: {
-          trigger: videoPreview,
-          start: `top 21px`,
-          end: "top -500px",
-          scrub: true,
-        },
-        y: 200,
-        onComplete: () => {
-          console.log("OKAY");
-        },
-      });
+            // const videoPreview = document.querySelector("#videoPreview");
+      // gsap.set(videoPreview, {
+      //   scaleX: 0.5,
+      //   transformOrigin: "center",
+      // });
+      // gsap.to(videoPreview, {
+      //   scrollTrigger: {
+      //     trigger: videoPreview,
+      //     start: `top bottom`,
+      //     end: "top 21px",
+      //     scrub: true,
+      //   },
+      //   scaleX: 1,
+      // });
+      // gsap.to(videoPreview, {
+      //   scrollTrigger: {
+      //     trigger: videoPreview,
+      //     start: `top 21px`,
+      //     end: "top -500px",
+      //     scrub: true,
+      //   },
+      //   y: 200,
+      //   onComplete: () => {
+      //     console.log("OKAY");
+      //   },
+      // });
 
-      videoPreview?.addEventListener("click", () => {
-        showPlayer();
-      });
+      // videoPreview?.addEventListener("click", () => {
+      //   showPlayer();
+      // });
     }
 
     const handleLoad = () => RemoveCurtain();
@@ -258,11 +258,13 @@ function HomePage() {
           </div>
         </div>
 
+        {/*
         <div className={styles.page} page-index="2" id="pageReel">
           <div id="videoPreview" className={styles.vid} >
             <div className={styles.vidTitle}>Watch Video</div>
           </div>
         </div>
+        */}
 
         <div className={styles.page} page-index="3" id="pageIntro">
           <Content
