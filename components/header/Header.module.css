@@ -162,3 +162,19 @@
         display: none;
     }
 }
+
+/* make the inner wrapper a positioned flex‐container */
+.inner {
+  position: relative;
+  display: flex;
+  align-items: center;
+  /* keep items “naturally” spaced; we’ll absolutely position the menu */
+  justify-content: flex-start;
+}
+
+/* push the nav to the exact horizontal center */
+.options {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
